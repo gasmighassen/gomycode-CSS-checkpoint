@@ -15,6 +15,7 @@ nav{
  width: 100%;
  position:fixed;
  background-color: black;
+ z-index: 9999;
 }
 nav ul li {
   list-style-type:none;
@@ -119,4 +120,54 @@ span{
 .my-work a:hover{
   color: #f95959;
   transform: .5s;
+}
+#contact {
+  padding: 100px;
+  height: 100vh;
+  width: 100%;
+  background-image: url('img/bg-contact.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.div-in img {
+  width: 30px;
+  height: 30px;
+}
+
+.main-contact {
+  position: relative;
+}
+
+
+ /* blablabla */
+ .my-contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between ;
+  align-items: flex-end;
+  position: absolute;
+  top: -135px;
+  left: 0px;
+ }
+
+ .div-in{
+  width: 25%;
+  height: 40%;
+  background-color:aliceblue;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+ }
+ 
+ .main-contact h4 {
+  font-size: 28px;
+  font-weight:bold;
+  font-style: italic;
+  color: black;
+}
+.main-contact h2{
+  padding: 0 0 20px 0;
+  font-size: 46px;
+  font-weight:bold;
+  color: #f95959;
 }
