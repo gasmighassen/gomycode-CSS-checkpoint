@@ -92,7 +92,7 @@ span{
   padding: 100px;
   height: 100vh;
   width: 100%;
-  background-image: url('img/bg.png');
+  background-image: url('img/bg-work.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -122,6 +122,10 @@ span{
   transform: .5s;
 }
 #contact {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
   padding: 100px;
   height: 100vh;
   width: 100%;
@@ -129,45 +133,76 @@ span{
   background-size: cover;
   background-position: center;
 }
-.div-in img {
+.contact-me-form {
+  width: 100%;
+  padding: 30px 0 100px 0;
+}
+.contact-me-form form{
+  width: 35%;
+  float: left;
+}
+.contact-me-form input , textarea {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border:none;
+  border-bottom: 1px solid hsl(0, 4%, 5%);
+}
+textarea {
+  width: 207px;
+  height: 100px;
+
+}
+.contact-me-form input[type="submit"]{
+  background-color: #f95959;
+  color: aliceblue;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.social img {
   width: 30px;
   height: 30px;
 }
 
-.main-contact {
-  position: relative;
-}
-
-
- /* blablabla */
- .my-contact {
-  width: 100%;
+#resume {
+  padding: 100px;
   height: 100vh;
-  display: flex;
-  justify-content: space-between ;
-  align-items: flex-end;
-  position: absolute;
-  top: -135px;
-  left: 0px;
- }
-
- .div-in{
-  width: 25%;
-  height: 40%;
-  background-color:aliceblue;
-  border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
- }
- 
- .main-contact h4 {
+  width: 100%;
+  background-image: url('img/bg-resume.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.my-resume {
+  width: 650px;
+  padding: 30px 0 30px 0;
+}
+.my-resume h4 {
   font-size: 28px;
   font-weight:bold;
   font-style: italic;
-  color: black;
+  color: rgb(0, 0, 0);
 }
-.main-contact h2{
+.my-resumer h2{
   padding: 0 0 20px 0;
   font-size: 46px;
   font-weight:bold;
   color: #f95959;
+}
+.btn{
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+.my-resume a:hover{
+  color: #f95959;
+  transform: .5s;
+}
+footer{
+  color: black;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
 }
